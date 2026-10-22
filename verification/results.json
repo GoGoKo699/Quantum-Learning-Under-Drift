@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "Finite-dimensional matrix identities and exhaustive finite cache experiments; these checks accompany the analytic proofs and do not establish asymptotic bounds, source-design construction, or hardware noise performance.",
+  "matrix_checks": {
+    "seed": 20261022,
+    "absolute_error_tolerance": 1e-12,
+    "posterior_cases": [
+      {
+        "dimension": 2,
+        "training_copies": 1,
+        "positive_effects": 8,
+        "posterior_identity": "passed",
+        "conditional_bound": "passed",
+        "highest_weight_saturation": "passed",
+        "saturating_success": 0.583333333333
+      },
+      {
+        "dimension": 2,
+        "training_copies": 2,
+        "positive_effects": 8,
+        "posterior_identity": "passed",
+        "conditional_bound": "passed",
+        "highest_weight_saturation": "passed",
+        "saturating_success": 0.625
+      },
+      {
+        "dimension": 3,
+        "training_copies": 1,
+        "positive_effects": 8,
+        "posterior_identity": "passed",
+        "conditional_bound": "passed",
+        "highest_weight_saturation": "passed",
+        "saturating_success": 0.583333333333
+      },
+      {
+        "dimension": 3,
+        "training_copies": 2,
+        "positive_effects": 8,
+        "posterior_identity": "passed",
+        "conditional_bound": "passed",
+        "highest_weight_saturation": "passed",
+        "saturating_success": 0.633333333333
+      }
+    ],
+    "instrument_cases": [
+      {
+        "dimension": 2,
+        "density_matrix_cases": 10,
+        "retained_memory_update": "passed",
+        "outcome_probability": "passed",
+        "balanced_label_accuracy": "passed",
+        "trace_distance_contraction": "passed"
+      },
+      {
+        "dimension": 3,
+        "density_matrix_cases": 10,
+        "retained_memory_update": "passed",
+        "outcome_probability": "passed",
+        "balanced_label_accuracy": "passed",
+        "trace_distance_contraction": "passed"
+      }
+    ],
+    "ancilla_circuit_cases": [
+      {
+        "qubits_per_register": 1,
+        "controlled_pair_swaps": 1,
+        "global_controlled_swap": "passed",
+        "luders_kraus_operators": "passed"
+      },
+      {
+        "qubits_per_register": 2,
+        "controlled_pair_swaps": 2,
+        "global_controlled_swap": "passed",
+        "luders_kraus_operators": "passed"
+      }
+    ],
+    "local_refinement_counterexample": {
+      "qubits_per_register": 2,
+      "parity_povm_matches_global_swap": true,
+      "retained_memory_trace_distance": 0.5,
+      "global_memory_diagonal": [
+        0.5,
+        0.0,
+        0.0,
+        0.5
+      ],
+      "local_refinement_memory_diagonal": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ]
+    }
+  },
+  "cache_checks": {
+    "brute_force_cases": [
+      {
+        "dimension": 2,
+        "cache_length": 1,
+        "refresh_probability": "1/4",
+        "exact_accuracy_advantage": "1/32",
+        "enumeration_equals_recurrence": true
+      },
+      {
+        "dimension": 2,
+        "cache_length": 3,
+        "refresh_probability": "1/3",
+        "exact_accuracy_advantage": "593/38880",
+        "enumeration_equals_recurrence": true
+      },
+      {
+        "dimension": 3,
+        "cache_length": 3,
+        "refresh_probability": "2/5",
+        "exact_accuracy_advantage": "149/7200",
+        "enumeration_equals_recurrence": true
+      }
+    ],
+    "positive_sum_cases": [
+      {
+        "dimension": 2,
+        "cache_length": 2,
+        "refresh_probability": "1/10",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 2,
+        "cache_length": 2,
+        "refresh_probability": "1/2",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 2,
+        "cache_length": 1,
+        "refresh_probability": "9/10",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 3,
+        "cache_length": 3,
+        "refresh_probability": "1/10",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 3,
+        "cache_length": 2,
+        "refresh_probability": "1/2",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 3,
+        "cache_length": 1,
+        "refresh_probability": "9/10",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 8,
+        "cache_length": 8,
+        "refresh_probability": "1/10",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 8,
+        "cache_length": 2,
+        "refresh_probability": "1/2",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 8,
+        "cache_length": 1,
+        "refresh_probability": "9/10",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 16,
+        "cache_length": 10,
+        "refresh_probability": "1/10",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 16,
+        "cache_length": 2,
+        "refresh_probability": "1/2",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      },
+      {
+        "dimension": 16,
+        "cache_length": 1,
+        "refresh_probability": "9/10",
+        "positive_sum_matches_rational_result": true,
+        "below_universal_classical_bound": true
+      }
+    ],
+    "floating_comparison_tolerance": 1e-12
+  }
+}
