@@ -1,0 +1,29 @@
+# Quantum Learning Under Drift
+
+This repository studies causal signal-versus-background classification of native quantum specimens when an unknown pure signal is independently refreshed between arrivals.
+
+## Core result
+
+For known d >= 2, 0 < r < 1, q = 1-r, optimal long-run expected accuracy above one half is Theta(q/(1+rd)) for classical records and Theta(q) for quantum memory. The classical class has unlimited records and computation and arbitrary adaptive within-round quantum processing; it retains no quantum information between arrivals. One retained d-dimensional register attains the quantum scaling. The quantum converse permits unlimited coherent memory.
+
+## Authoritative routes
+
+- Scientific question, source, timing, learner classes, quantifiers, theorem and endpoints: science/model.md.
+- Inherited arbitrary-effect Haar posterior identity and optimal measure-training-first discrimination: science/haar_posterior.md.
+- Per-round genie domination, geometric age bound, matching fixed-basis cache, exact cache formula and finite horizon: science/classical_prediction.md.
+- Global SWAP instrument, exact recurrence, startup, universal quantum converse and pairwise comparison: science/quantum_prediction.md.
+- Strong moment norms, Pauli twirl, approximation transfer, age-tail truncation and polynomial hidden-source preparation: science/efficient_sources.md.
+- Logical gate/qubit accounting, instrument fidelity and global-versus-local noise: science/implementation_and_noise.md.
+- Correlation lifetime, examples, resource comparison and physical scope: science/interpretation.md.
+- Imported ingredients, nearest prior results and exact comparison boundaries: references/RELATED_WORK.md and references/references.bib.
+- Runnable scientific checks and their limits: verification/README.md.
+
+## Essential distinctions
+
+The main frontier is exact for Haar refresh. The efficiently generated source corollary has a separate approximation and efficiency regime. Neither claim supplies the source seed to the learner.
+
+The observed source is stationary in distribution; the latent concept refreshes. Prediction must precede the next arrival. Labels and refresh times are hidden in the actual task. Extra pure copies and refresh flags appear only in the strengthened classical upper-bound experiment and must be measured before the current test.
+
+Optimal scaling is not exact constant optimality. The rolling SWAP accuracy is explicit but not claimed to be optimal; disjoint-pair comparison already attains the quantum scaling. The advantage is measured above chance and need not be large in absolute terms.
+
+Use the written proofs for universal statements. Numerical checks establish their tested identities and cases, not a general theorem or exhaustive novelty. Do not translate the accuracy law into a complete runtime speedup or fixed local-noise guarantee. The logical input and memory assumptions are consequential.
