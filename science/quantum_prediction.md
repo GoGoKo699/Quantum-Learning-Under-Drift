@@ -72,7 +72,7 @@ This equation averages over the newly observed SWAP outcome. The conditional ret
 For a fixed current hidden state $`P_t`$ and memory state $`\sigma_t`$, the SWAP probabilities satisfy
 
 ```math
-\Pr(+\mid Y_t=1)=\frac{1+\operatorname{Tr}(\sigma_tP_t)}2,
+\Pr(+\mid Y_t=1)=\frac{1+\mathrm{Tr}(\sigma_tP_t)}2,
 \qquad
 \Pr(+\mid Y_t=0)=\frac{1+1/d}{2}.
 ```
@@ -82,7 +82,7 @@ The fair-label success probability is consequently
 ```math
 \Pr(\widehat Y_t=Y_t\mid \sigma_t,P_t)
 =\frac12+
-\frac{\operatorname{Tr}(\sigma_tP_t)-1/d}{4}.
+\frac{\mathrm{Tr}(\sigma_tP_t)-1/d}{4}.
 ```
 
 ## Correlation recursion and stationary accuracy
@@ -90,14 +90,14 @@ The fair-label success probability is consequently
 Define the averaged overlap and its excess over an independent reference by
 
 ```math
-x_t=\mathbb E\operatorname{Tr}(\sigma_tP_t),
+x_t=\mathbb E\mathrm{Tr}(\sigma_tP_t),
 \qquad y_t=x_t-\frac1d.
 ```
 
 The initial memory gives $`y_1=0`$. Averaged over the current fair label, the input state is $`(P_t+I/d)/2`$. After the memory update, its overlap with the same hidden state has expectation
 
 ```math
-\mathbb E\operatorname{Tr}(\sigma_t^+P_t)
+\mathbb E\mathrm{Tr}(\sigma_t^+P_t)
 =\frac{x_t}{2}+\frac{1+1/d}{4}.
 ```
 

@@ -15,13 +15,13 @@ Predict signal on the plus outcome and background on the minus outcome. Discard 
 ```math
 \mathcal J(\omega_{MX})
 =\sum_{y\in\{+,-\}} |y\rangle\langle y|
-  \otimes\operatorname{Tr}_X(P_y\omega_{MX}P_y).
+  \otimes\mathrm{Tr}_X(P_y\omega_{MX}P_y).
 ```
 
 For a product input $`\sigma\otimes\rho`$, tracing out the outcome gives
 
 ```math
-\operatorname{Tr}_{Y}\mathcal J(\sigma\otimes\rho)
+\mathrm{Tr}_{Y}\mathcal J(\sigma\otimes\rho)
 =\frac{\sigma+\rho}{2}.
 ```
 
@@ -78,7 +78,7 @@ For the ideal instrument and a fixed current hidden pure state $`P`$, the balanc
 
 ```math
 A(\sigma,P)=\frac12+
-\frac{\operatorname{Tr}(\sigma P)-1/d}{4}.
+\frac{\mathrm{Tr}(\sigma P)-1/d}{4}.
 ```
 
 Changing the memory changes this accuracy by at most one quarter of the memory trace distance. Changing the complete instrument at fixed memory changes any success probability by at most $`\delta`$. Therefore
@@ -106,7 +106,7 @@ while backgrounds remain $`I/d`$. Between arrivals, apply the global memory chan
 Define the normalized memory alignment with the current hidden state by
 
 ```math
-a_t=\frac{\mathbb E\operatorname{Tr}(\sigma_tP_t)-1/d}{1-1/d}.
+a_t=\frac{\mathbb E\mathrm{Tr}(\sigma_tP_t)-1/d}{1-1/d}.
 ```
 
 Its recursion and stationary value are

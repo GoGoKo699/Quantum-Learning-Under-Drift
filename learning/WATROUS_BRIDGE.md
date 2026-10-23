@@ -40,13 +40,13 @@ The following translation fixes conventions used throughout [M01–M12](MILESTON
 | $`\mathcal X`$, $`\mathrm L(\mathcal X)`$, $`\mathrm D(\mathcal X)`$ | A Hilbert space, its linear operators, and its density matrices |
 | $`1_{\mathcal X}`$ | The identity matrix $`I`$; $`I/d`$ is the maximally mixed state |
 | $`1_{\mathrm L(\mathcal X)}`$ | The identity **channel**, denoted $`\mathrm{id}`$ |
-| $`\langle A,B\rangle=\operatorname{Tr}(A^*B)`$ | $`\operatorname{Tr}(A^\dagger B)`$ |
+| $`\langle A,B\rangle=\mathrm{Tr}(A^*B)`$ | $`\mathrm{Tr}(A^\dagger B)`$ |
 | A measurement effect $`\mu(a)`$ | A positive operator $`E_a`$ with $`\sum_a E_a=I`$ |
 | An instrument operator $`M_a`$ in §2.3.2 | A Kraus operator $`K_a`$; its outcome effect is $`K_a^\dagger K_a`$ |
-| $`\mathcal X^{\vee m}`$ and its projector | $`\operatorname{Sym}^m(\mathbb C^d)`$ and $`\Pi_m`$ |
+| $`\mathcal X^{\vee m}`$ and its projector | $`\mathrm{Sym}^m(\mathbb C^d)`$ and $`\Pi_m`$ |
 | $`\lvert\!\lvert\!\lvert\Phi\rvert\!\rvert\!\rvert_1`$ | The full diamond norm $`\lVert\Phi\rVert_\diamond`$ |
 
-The [posterior proof](../science/haar_posterior.md) uses $`M_z`$ for a **POVM effect**, not a Kraus operator. Its meaning is fixed by $`\Pr(z\mid P)=\operatorname{Tr}(M_zP^{\otimes m})`$. Keeping effects and operations distinct becomes essential when a measured register is retained.
+The [posterior proof](../science/haar_posterior.md) uses $`M_z`$ for a **POVM effect**, not a Kraus operator. Its meaning is fixed by $`\Pr(z\mid P)=\mathrm{Tr}(M_zP^{\otimes m})`$. Keeping effects and operations distinct becomes essential when a measured register is retained.
 
 The project uses $`d`$ for Hilbert-space dimension, $`n`$ for qubit count when $`d=2^n`$, and $`m`$ for a number of prior specimens. These meanings should replace the locally chosen variables in a book formula. The symmetric-subspace dimension is
 
@@ -103,18 +103,18 @@ M_2=\mathbb E(P\otimes P)
 
 where $`S`$ swaps the two qubits. The denominator follows from $`\Pi_2=(I_4+S)/2`$ and $`D_2=3`$. These are the cases $`m=1,2`$ of the moment formula connected to [M10–M11](MILESTONES.md#m10).
 
-The outcome probability is $`\operatorname{Tr}(E_0M_1)=1/2`$. Before dividing by that probability, the posterior first moment is
+The outcome probability is $`\mathrm{Tr}(E_0M_1)=1/2`$. Before dividing by that probability, the posterior first moment is
 
 ```math
 \begin{aligned}
 N_0
-&=\mathbb E\!\left[P\operatorname{Tr}(E_0P)\right]\\
-&=\operatorname{Tr}_1\!\left[(E_0\otimes I_2)M_2\right]\\
+&=\mathbb E\!\left[P\mathrm{Tr}(E_0P)\right]\\
+&=\mathrm{Tr}_1\!\left[(E_0\otimes I_2)M_2\right]\\
 &=\frac{I_2+E_0}{6}.
 \end{aligned}
 ```
 
-The last line uses $`\operatorname{Tr}E_0=1`$ and $`\operatorname{Tr}_1[(E_0\otimes I_2)S]=E_0`$. Normalizing gives
+The last line uses $`\mathrm{Tr}E_0=1`$ and $`\mathrm{Tr}_1[(E_0\otimes I_2)S]=E_0`$. Normalizing gives
 
 ```math
 R_0=\frac{N_0}{1/2}
@@ -145,7 +145,7 @@ Directly, it is right on a signal with probability $`2/3`$ and on a background w
 The actual first specimen is unlabeled. Given $`P`$, it is $`(P+I_2/2)/2`$, so the probability of observing zero is
 
 ```math
-\ell_0(P)=\frac12\operatorname{Tr}(E_0P)+\frac14.
+\ell_0(P)=\frac12\mathrm{Tr}(E_0P)+\frac14.
 ```
 
 Its average is again $`1/2`$, but its evidence about $`P`$ is weaker. The normalized posterior becomes
@@ -217,7 +217,7 @@ After averaging over the new measurement outcome, the retained state is
 
 This is an ensemble update. It does not assert that every conditional branch has that density matrix. Because the protocol's subsequent operations do not depend on previous outcomes and the relevant overlap is linear, the averaged update gives its expected performance exactly. The [quantum proof](../science/quantum_prediction.md#exact-averaged-memory-update) derives it by expanding the two projectors and taking a partial trace.
 
-Write $`y_t=\mathbb E\operatorname{Tr}(\sigma_tP_t)-1/d`$ for the memory's excess alignment with the current hidden state. Its two contributions have a simple meaning: existing alignment is halved by the update and survives a refresh transition only with probability $`q`$; the current signal can create new alignment. Quantitatively,
+Write $`y_t=\mathbb E\mathrm{Tr}(\sigma_tP_t)-1/d`$ for the memory's excess alignment with the current hidden state. Its two contributions have a simple meaning: existing alignment is halved by the update and survives a refresh transition only with probability $`q`$; the current signal can create new alignment. Quantitatively,
 
 ```math
 y_{t+1}=\frac q2 y_t+\frac{q(1-1/d)}4.

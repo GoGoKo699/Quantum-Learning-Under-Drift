@@ -84,7 +84,7 @@ Dependencies refer only to earlier milestones. Each record identifies a scientif
 ### M09 — SWAP as a two-register comparison
 
 - **Central question:** How can two physical states be compared without first estimating either state?
-- **Understanding target:** The swap operator obeys $`\operatorname{Tr}[S(\sigma\otimes\rho)]=\operatorname{Tr}(\sigma\rho)`$. Its symmetric and antisymmetric projectors are $`(I\pm S)/2`$, so a binary symmetry measurement accesses an overlap.
+- **Understanding target:** The swap operator obeys $`\mathrm{Tr}[S(\sigma\otimes\rho)]=\mathrm{Tr}(\sigma\rho)`$. Its symmetric and antisymmetric projectors are $`(I\pm S)/2`$, so a binary symmetry measurement accesses an overlap.
 - **Dependencies and story role:** [M03](#m03), [M06](#m06). This isolates the local quantum comparison primitive before its streaming implementation.
 - **Conceptual connection:** A specimen retained from the past can act as a physical reference, without becoming a classical description of the hidden signal.
 - **Source pointers:** Watrous [§7.1.1][w-permutations] for permutation operators and [§2.3.2][w-measurement-notions] for projective measurements; project [SWAP instrument](../science/quantum_prediction.md#a-physical-retained-register-swap-instrument).
@@ -203,7 +203,7 @@ Dependencies refer only to earlier milestones. Each record identifies a scientif
 ### M22 — The Beta identity and the matching cache window
 
 - **Central question:** What window length balances collecting useful repetitions against retaining obsolete outcomes?
-- **Understanding target:** A Haar basis probability has law $`\operatorname{Beta}(1,d-1)`$. Integration by parts converts the covariance into a positive integral and gives an explicit lower bound. Choosing $`L=\lfloor\min(d,1/r)\rfloor`$ and using $`q^L\ge q/e`$ yields advantage at least $`q/[128e^3(1+rd)]`$.
+- **Understanding target:** A Haar basis probability has law $`\mathrm{Beta}(1,d-1)`$. Integration by parts converts the covariance into a positive integral and gives an explicit lower bound. Choosing $`L=\lfloor\min(d,1/r)\rfloor`$ and using $`q^L\ge q/e`$ yields advantage at least $`q/[128e^3(1+rd)]`$.
 - **Dependencies and story role:** [M11](#m11), [M21](#m21). This matches the classical converse uniformly over the allowed rates and dimensions.
 - **Conceptual connection:** The useful window ends at the smaller of the state-information scale and the correlation lifetime.
 - **Source pointers:** Watrous [§7.2.1][w-haar] for the random-state foundation; project [Beta identity, constants, and window choice](../science/classical_prediction.md#the-beta-identity-and-an-explicit-constant).
