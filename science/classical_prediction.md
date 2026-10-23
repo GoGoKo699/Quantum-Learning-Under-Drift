@@ -151,7 +151,7 @@ To obtain this expression, subtract the two current outcome distributions $`p_j`
 For every $`a`$, the function multiplying $`p-1/d`$ is decreasing in $`p`$. Its covariance with $`p`$ is therefore nonpositive. Explicitly, for independent copies $`p,p'`$ and a decreasing function $`f`$,
 
 ```math
-2\operatorname{Cov}(p,f(p))
+2\mathrm{Cov}(p,f(p))
 =\mathbb E[(p-p')(f(p)-f(p'))]\le0.
 ```
 
