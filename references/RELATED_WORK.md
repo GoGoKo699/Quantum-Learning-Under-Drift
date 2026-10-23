@@ -36,6 +36,14 @@ for advantage above random guessing, together with an explicit retained-register
 
 Stable anchors on this page match the keys in [references.bib](references.bib). Preprint versions identify the texts used for the stated theorem or model comparisons; a published paper and a later corrected preprint can have different dates.
 
+<a id="watrous2018"></a>
+
+### Watrous: the selected educational foundation
+
+John Watrous. **The Theory of Quantum Information.** Cambridge University Press (2018). [DOI](https://doi.org/10.1017/9781316848142) · [Author-hosted prepublication draft](https://cs.uwaterloo.ca/~watrous/TQI/TQI.pdf).
+
+This is the project's single educational anchor. Chapter 2 supplies the state, channel, measurement, and instrument framework; Theorem 3.4 gives binary state discrimination; Section 3.3.2 treats the completely bounded trace norm; Chapter 7 supplies symmetric subspaces and Haar averages. The [source bridge](../learning/WATROUS_BRIDGE.md) gives verified section pointers, translates conventions, and supplies the additional steps to the refresh model. The arbitrary-effect posterior attribution below and the approximate-design construction remain separate research dependencies. The book is linked rather than reproduced.
+
 <a id="hayashi2026"></a>
 
 ### Hayashi, Dasgupta, and Warsi: arbitrary-effect Haar posterior
