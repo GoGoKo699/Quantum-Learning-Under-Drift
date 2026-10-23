@@ -33,16 +33,16 @@ In particular, the optimum is $`1/2`$ at $`m=0`$. Independent side information, 
 Write $`\Pi_m`$ for the projector onto the symmetric subspace of $`(\mathbb C^d)^{\otimes m}`$, and
 
 ```math
-D_m=\operatorname{Tr}\Pi_m=\binom{d+m-1}{m}.
+D_m=\mathrm{Tr}\Pi_m=\binom{d+m-1}{m}.
 ```
 
 For $`m\ge1`$, let $`M_z`$ be a training POVM effect with nonzero outcome probability. The formulas apply equally to an effect density for a continuous outcome. Define
 
 ```math
 A_z=\Pi_m M_z\Pi_m,\qquad
-a_z=\operatorname{Tr}A_z,\qquad
+a_z=\mathrm{Tr}A_z,\qquad
 B_z=\frac{A_z}{a_z},\qquad
-\tau_z=\operatorname{Tr}_{2,\ldots,m}B_z.
+\tau_z=\mathrm{Tr}_{2,\ldots,m}B_z.
 ```
 
 The state $`B_z`$ is supported on the symmetric subspace, so all of its one-particle reductions equal the density matrix $`\tau_z`$.
@@ -56,7 +56,7 @@ The normalized Haar moments are
 Indeed, the integral is invariant under every $`U^{\otimes k}`$, has support in the symmetric subspace, and has trace one. Irreducibility of the symmetric representation gives the stated normalization. It follows that
 
 ```math
-\Pr(Z=z)=\int\operatorname{Tr}(M_zP^{\otimes m})\,dP
+\Pr(Z=z)=\int\mathrm{Tr}(M_zP^{\otimes m})\,dP
 =\frac{a_z}{D_m}.
 ```
 
@@ -64,9 +64,9 @@ Let $`R_z=\mathbb E[P\mid Z=z]`$ be the posterior predictive state. Its unnormal
 
 ```math
 N_z
-=\int P\,\operatorname{Tr}(M_zP^{\otimes m})\,dP
+=\int P\,\mathrm{Tr}(M_zP^{\otimes m})\,dP
 =\frac{1}{D_{m+1}}
-\operatorname{Tr}_{1,\ldots,m}
+\mathrm{Tr}_{1,\ldots,m}
 \bigl[(A_z\otimes I)\Pi_{m+1}\bigr].
 ```
 
@@ -98,12 +98,12 @@ No rank-one assumption on $`M_z`$ is used. This is why the identity applies to a
 Conditioned on $`Z=z`$, the two test hypotheses are $`R_z`$ and $`I/d`$, with the same equal prior probabilities. For any two states $`R,S`$, a two-outcome effect $`0\le E\le I`$ has equal-prior success probability
 
 ```math
-\frac12\operatorname{Tr}(ER)
-+\frac12\operatorname{Tr}[(I-E)S]
-=\frac12+\frac12\operatorname{Tr}[E(R-S)].
+\frac12\mathrm{Tr}(ER)
++\frac12\mathrm{Tr}[(I-E)S]
+=\frac12+\frac12\mathrm{Tr}[E(R-S)].
 ```
 
-The largest value is obtained by projecting onto the positive eigenspace of $`R-S`$. As $`\operatorname{Tr}(R-S)=0`$, the sum of its positive eigenvalues is $`\|R-S\|_1/2`$. Thus the optimal success probability is $`1/2+\|R-S\|_1/4`$.
+The largest value is obtained by projecting onto the positive eigenspace of $`R-S`$. As $`\mathrm{Tr}(R-S)=0`$, the sum of its positive eigenvalues is $`\|R-S\|_1/2`$. Thus the optimal success probability is $`1/2+\|R-S\|_1/4`$.
 
 For the posterior above,
 
