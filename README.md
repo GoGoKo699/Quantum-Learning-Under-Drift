@@ -25,6 +25,10 @@ The constants are uniform for $`d\ge2`$ and $`0<r<1`$. The classical-record lear
 
 At fixed $`0<r<1`$, the classical advantage is $`\Theta(2^{-n})`$ and the quantum advantage is constant. The crossover is set by $`rd`$: classical prediction needs a correlation lifetime comparable to the state-space dimension. This is an accuracy comparison on native quantum inputs. The explicit quantum protocol need not classify almost perfectly; at $`r=1/2`$ its accuracy approaches $`13/24\approx54.17\%`$.
 
+![Quantum and classical prediction advantage across refresh rates](verification/frontier.svg)
+
+The figure fixes $`d=256`$ and divides each advantage by $`q=1-r`$. It shows the exact achieved SWAP advantage, an upper bound for every classical-record strategy, and the achieved cache advantage. The shaded interval contains the optimal classical advantage divided by $`q`$. The [verification account](verification/README.md#the-cache-calculation-used-in-the-figure) gives the finite-sum calculation and its scope.
+
 ## Read the science
 
 Start with the [operational model and exact results](science/model.md). The [Haar posterior lemma](science/haar_posterior.md) supplies an inherited state-estimation ingredient. The two prediction pages establish the complete matching law; [interpretation](science/interpretation.md) connects the bounds to correlation lifetime and their resource meaning.
@@ -41,6 +45,12 @@ Start with the [operational model and exact results](science/model.md). The [Haa
 | Which ingredients and nearby results are established prior work? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 
 [The LLM reading guide](llms.txt) maps questions to these authoritative files.
+
+## Learn the project
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [Watrous bridge](learning/WATROUS_BRIDGE.md) identifies focused readings in the author's available prepublication draft, translates notation, and explains the steps from quantum-state discrimination to prediction under refresh. Its worked example connects a measurement outcome to a predictive state and a subsequent classification decision.
+
+The [30-milestone map](learning/MILESTONES.md) organizes the understanding route: [M01–M12](learning/MILESTONES.md#m01) build the quantum-information foundations, and [M13–M30](learning/MILESTONES.md#m13) connect the causal experiment, both matching bounds, preparation costs, and physical interpretation. The map is defined by the scientific project and is suitable for any reader. The source bridge and the canonical proofs can be read alongside it.
 
 ## Reproduce the checks
 

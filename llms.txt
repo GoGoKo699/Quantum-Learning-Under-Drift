@@ -8,6 +8,8 @@ For known d >= 2, 0 < r < 1, q = 1-r, optimal long-run expected accuracy above o
 
 ## Authoritative routes
 
+- Project-defined understanding targets, stable M01–M30 IDs, two phases, dependencies and sources: learning/MILESTONES.md.
+- The single selected educational anchor (Watrous, 2018), verified sections, notation translation, worked example and source-to-project derivations: learning/WATROUS_BRIDGE.md.
 - Scientific question, source, timing, learner classes, quantifiers, theorem and endpoints: science/model.md.
 - Inherited arbitrary-effect Haar posterior identity and optimal measure-training-first discrimination: science/haar_posterior.md.
 - Per-round genie domination, geometric age bound, matching fixed-basis cache, exact cache formula and finite horizon: science/classical_prediction.md.
@@ -18,7 +20,16 @@ For known d >= 2, 0 < r < 1, q = 1-r, optimal long-run expected accuracy above o
 - Imported ingredients, nearest prior results and exact comparison boundaries: references/RELATED_WORK.md and references/references.bib.
 - Runnable scientific checks and their limits: verification/README.md.
 
+## Reading routes
+
+- Physical story: README.md, then science/interpretation.md, with science/model.md for the exact experiment.
+- Study: learning/MILESTONES.md and learning/WATROUS_BRIDGE.md, followed by the canonical science links attached to each milestone. The map has 12 background/preliminary milestones and 18 narrative/innovation milestones.
+- Theorem and proofs: science/model.md, science/haar_posterior.md, the classical and quantum prediction pages, then science/efficient_sources.md and science/implementation_and_noise.md for their separate assumptions.
+- Reproduction: verification/README.md gives commands and outputs; follow its proof links to distinguish finite checks from universal arguments.
+
 ## Essential distinctions
+
+Watrous is the only educational anchor. Research citations supply additional theorem ingredients and provenance; they do not form a second prerequisite reading list. The milestone map records shared understanding targets, not a particular reader's progress or an assessment protocol.
 
 The main frontier is exact for Haar refresh. The efficiently generated source corollary has a separate approximation and efficiency regime. Neither claim supplies the source seed to the learner.
 

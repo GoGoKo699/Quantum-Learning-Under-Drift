@@ -79,7 +79,7 @@ also has only nonnegative terms. These finite sums and the positive renewal recu
 
 ![Rolling SWAP, a universal classical upper bound, and the actual cache classifier across refresh rates](frontier.svg)
 
-The figure fixes $`d=256`$ and uses $`L=\lfloor\min(d,1/r)\rfloor`$. It divides each advantage by $`q=1-r`$ to expose the dimension-times-refresh crossover. The quantum curve is the exact formula for the particular rolling-SWAP strategy. The classical upper curve is the Jensen bound valid for every classical-record strategy. The lower curve is the actual cache classifier, evaluated from the displayed recurrence. The shaded interval contains the unknown exact optimal classical advantage; it is not a fitted optimum.
+The figure fixes $`d=256`$ and uses $`L=\lfloor\min(d,1/r)\rfloor`$. It divides each advantage by $`q=1-r`$ to expose the dimension-times-refresh crossover. The quantum curve is the exact formula for the particular rolling-SWAP strategy. The classical upper curve is the Jensen bound valid for every classical-record strategy. The lower curve is the actual cache classifier, evaluated from the displayed recurrence. The shaded interval contains the unknown exact optimal classical advantage divided by $`q`$; it is not a fitted optimum.
 
 ## Scope
 
